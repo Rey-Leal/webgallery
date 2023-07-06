@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>WebGallery</title>
+    <link href="css/Estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/icon.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="geral">
+        <div id="logo">
+            <h1>
+                WebGallery
+            </h1>
+            <h2>
+                &raquo;&nbsp;&nbsp;&nbsp;A galeria inteligente</h2>
+        </div>
+        <div id="topo">
+            <div id="menu">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="Noticias.aspx">Noticias</a></li>
+                    <li><a href="Galeria.aspx">Galeria</a></li>
+                    <li><a href="QuemSomos.aspx">Sobre</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="EmConstrucao.aspx">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pagina">
+        <div id="conteudo">
+            <div class="textoConteudo">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="barraLateral">
+            <ul>
+                <li id="pesquisa">
+                    <h2>
+                        Buscar</h2>
+                    <form method="get" action="">
+                    <fieldset>
+                        <input type="text" id="textoPesquisa" name="s" value="" />
+                        <input type="submit" id="botaoPesquisa" value="pesquisa" />
+                    </fieldset>
+                    </form>
+                </li>
+                <li>
+                    <h2>
+                        Nossa Empresa</h2>
+                    <ul>
+                        <li><a href="QuemSomos.aspx">Quem Somos</a></li>
+                        <li><a href="Localizacao.aspx">Localização</a></li>
+                        <li><a href="EmConstrucao.aspx">Diferencial</a></li>
+                        <li><a href="EmConstrucao.aspx">Agenda</a></li>
+                        <li><a href="Sugestoes.aspx">Sugestões</a></li>
+                        <li><a href="Galeria.aspx">Galeria</a></li>
+                        <li><a href="Contatos.aspx">Contatos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>
+                        Nossa Missão</h2>
+                    <ul>
+                        <li><a href="EmConstrucao.aspx">Buscar o melhor</a></li>
+                        <li><a href="EmConstrucao.aspx">Capacitação</a></li>
+                        <li><a href="EmConstrucao.aspx">Empregos</a></li>
+                        <li><a href="EmConstrucao.aspx">Sucesso</a></li>
+                        <li><a href="EmConstrucao.aspx">Qualidade</a></li>
+                        <li><a href="EmConstrucao.aspx">Melhorias</a></li>
+                        <li><a href="EmConstrucao.aspx">Responsabilidade</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both;">
+            &nbsp;</div>
+    </div>
+    <div id="rodape">
+        <p id="conteudoRodape">
+            WebMaster Rey Leal. Todos Direitos Reservados</p>
+    </div>
+    </form>
+</body>
+</html>
